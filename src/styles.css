@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:
+      linear-gradient(90deg, rgba(185, 28, 28, 0.055) 1px, transparent 1px),
+      linear-gradient(180deg, #ffffff 0%, #fff7f7 48%, #f5f5f4 100%);
+    background-size:
+      84px 84px,
+      auto;
+    color: #18181b;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ::selection {
+    background: #b91c1c;
+    color: #ffffff;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    transition:
+      color 180ms ease,
+      background-color 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      opacity 180ms ease;
+  }
+}
+
+@layer utilities {
+  .blade-sheen {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .blade-sheen::after {
+    animation: blade-sheen 4.5s ease-in-out infinite;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.36),
+      transparent
+    );
+    content: '';
+    height: 100%;
+    left: -45%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-18deg);
+    width: 28%;
+  }
+}
+
+@keyframes blade-sheen {
+  0%,
+  48% {
+    left: -45%;
+  }
+  78%,
+  100% {
+    left: 120%;
+  }
+}

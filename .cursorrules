@@ -1,0 +1,24 @@
+# shadcn instructions
+
+Use shadcn/ui components for UI primitives whenever the matching component already exists in `src/components/ui`.
+
+Before hand-rolling common primitives like buttons, dialogs, sheets, dropdowns, inputs, selects, textareas, checkboxes, tabs, cards, tooltips, or alerts:
+
+1. Check `src/components/ui` first.
+2. If the shadcn component exists, import and style that component instead of writing raw HTML for the primitive.
+3. If the component does not exist, add it with the latest shadcn CLI, then customize it to match `DESIGN.md`.
+4. Only hand-roll a primitive when shadcn does not provide a good fit, the needed behavior is domain-specific, or using shadcn would add unnecessary complexity.
+
+Use the latest version of shadcn to install new components, like this command to add a button component:
+
+```bash
+pnpm dlx shadcn@latest add button
+```
+
+# dev server instructions
+
+The Vite dev server is usually already running for this project.
+
+Do not start, restart, background, or otherwise launch `npm run dev`, `vite`, `node node_modules/vite/bin/vite.js`, or any `Start-Process` command for a dev server unless the user explicitly asks for it.
+
+For frontend changes, run `npm.cmd run build` for verification. If a browser preview is needed, ask the user to use their existing running Vite server instead of launching another process.
