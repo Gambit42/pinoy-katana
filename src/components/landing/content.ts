@@ -29,22 +29,14 @@ export const socialProfiles = [
 
 export const imageSources = {
   hero: '/katana-ph.png',
-  bladeCloseup:
-    'https://images.unsplash.com/photo-1689493720621-fbf73d28bb52?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1800',
-  displayStand:
-    'https://unsplash.com/photos/FgaMsJDOaok/download?force=true&w=1800',
-  blueBackdrop:
-    'https://unsplash.com/photos/zIOrZH4Hkmc/download?force=true&w=1800',
-  fieldBlade:
-    'https://unsplash.com/photos/ULqwK2XREx0/download?force=true&w=1800',
-  grassBlade:
-    'https://unsplash.com/photos/wTAUVTsMRLk/download?force=true&w=1800',
-  knifeBlock:
-    'https://unsplash.com/photos/PrzmLSlBNzQ/download?force=true&w=1800',
-  woodenSword:
-    'https://unsplash.com/photos/5XV2h8VINzY/download?force=true&w=1800',
-  customBlade:
-    'https://unsplash.com/photos/Y4P1fJLOIGc/download?force=true&w=1800',
+  bladeCloseup: '/images/bladeCloseup.jpg',
+  displayStand: '/images/displayStand.jpg',
+  blueBackdrop: '/images/blueBackdrop.jpg',
+  fieldBlade: '/images/fieldBlade.jpg',
+  grassBlade: '/images/grassBlade.jpg',
+  knifeBlock: '/images/knifeBlock.jpg',
+  woodenSword: '/images/woodenSword.jpg',
+  customBlade: '/images/customBlade.jpg',
 }
 
 export const homepage = {
